@@ -1,0 +1,23 @@
+#Command to use
+#sudo pip install -r prereq.txt
+#sudo apt-get install ffmpeg
+
+#gcloud iam service-accounts keys create key.json --iam-account=my-account@VideoToActors.iam.gserviceaccount.com
+#export GOOGLE_APPLICATION_CREDENTIALS=key.json
+python person_extraction_from_video.py   game-night-trailer-2_h1080p.mov  video2actors > log190318.txt
+#ffmpeg -i 'https://storage.googleapis.com/video2actors/tomb-raider-trailer-2_h1080p.mov' -f null -
+google_api_python_client==1.6.4
+argparse==1.4.0
+datetime==4.2
+pandas==0.20.3
+numpy==1.13.3
+sk-video==1.1.8
+opencv-python==3.3.0.10
+Pillow==2.7.0
+ffmpy==0.2.2
+ffmpeg-python==0.1.9
+google-api-python-client==1.6.4
+google-cloud-vision==0.29.0
+google-cloud-videointelligence==1.0.0
+google-cloud-storage==1.6.0
+wikipedia==1.4.0
